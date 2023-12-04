@@ -1,4 +1,4 @@
-﻿namespace AdventOfCode2022.Test;
+﻿namespace AdventOfCode2023.Test;
 
 [TestFixture]
 public class Day{day}Tests

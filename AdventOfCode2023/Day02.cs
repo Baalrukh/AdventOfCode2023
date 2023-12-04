@@ -1,6 +1,6 @@
-﻿namespace AdventOfCode2023;
+namespace AdventOfCode2023;
 
-public class Day{day} : Exercise
+public class Day02 : Exercise
 {
     public long ExecutePart1(string[] lines)
     {
