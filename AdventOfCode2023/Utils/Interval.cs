@@ -17,6 +17,11 @@ public readonly struct Interval
         return new Interval(fromIncluded, toIncluded + 1);
     }
 
+    public static Interval FromToExcluding(int fromIncluded, int toExcluded)
+    {
+        return new Interval(fromIncluded, toExcluded);
+    }
+
     public int Length => _endExcluded - Start;
 
     public bool IsInside(int value)
