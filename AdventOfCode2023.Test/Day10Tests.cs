@@ -80,7 +80,7 @@ public class Day10Tests
     [Test]
     public void TestPipeCanEnter()
     {
-        Day10.Pipe pipe = new Day10.Pipe('G', Day10.Direction.East, Day10.Direction.South, null);
+         Day10.Pipe pipe = new Day10.Pipe('G', Day10.Direction.East, Day10.Direction.South);
         Assert.IsTrue(pipe.CanEnter(Day10.Direction.East));    
         Assert.IsTrue(pipe.CanEnter(Day10.Direction.North));    
         Assert.IsFalse(pipe.CanEnter(Day10.Direction.West));    
@@ -90,7 +90,7 @@ public class Day10Tests
     [Test]
     public void TestPipeAdvance()
     {
-        Day10.Pipe pipe = new Day10.Pipe('G', Day10.Direction.East, Day10.Direction.South, null);
+        Day10.Pipe pipe = new Day10.Pipe('G', Day10.Direction.East, Day10.Direction.South);
         Assert.AreEqual(new Day10.PipePosition(new IntVector2(8, 10), Day10.Direction.South, 7),
                         pipe.Advance(new Day10.PipePosition(new IntVector2(8, 9), Day10.Direction.East, 6)));
         Assert.AreEqual(new Day10.PipePosition(new IntVector2(7, 9), Day10.Direction.West, 7),
@@ -105,6 +105,7 @@ public class Day10Tests
         Assert.AreEqual(4, new Day10().ExecutePart2(_sampleLinePart2_2));
         Assert.AreEqual(8, new Day10().ExecutePart2(_sampleLinePart2_3));
     }
+
     [Test]
     public void TestPartTMP()
     {
